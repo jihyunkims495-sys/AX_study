@@ -24,6 +24,7 @@ chapter별 강의 메모(lesson) 실습(practice) 폴더 하위에 각 강의 �
     - 01.ipynb
     - 02.ipynb
     - 03.ipynb
+
 [chapter02] Python
   - lesson : 강의 메모
     - 01.ipynb
