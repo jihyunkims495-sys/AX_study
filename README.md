@@ -15,7 +15,7 @@ AI Agent 부트캠프 학습 내용을 기록하는 저장소입니다.
 chapter별 강의 메모(lesson) 실습(practice) 폴더 하위에 각 강의 세션이 정리되어 있습니다.
 강의 세션은 .ipynb 파일로 구성되어 있습니다.
 
-- [chapter01] Git & GitHub
+[chapter01] Git & GitHub
   - lesson : 강의 메모
     - 01.ipynb
     - 02.ipynb
@@ -24,7 +24,7 @@ chapter별 강의 메모(lesson) 실습(practice) 폴더 하위에 각 강의 �
     - 01.ipynb
     - 02.ipynb
     - 03.ipynb
-- [chapter02] Python
+[chapter02] Python
   - lesson : 강의 메모
     - 01.ipynb
     - 02.ipynb
