@@ -22,3 +22,8 @@ build-backend = "uv_build"
 members = [
     "ex_venv",
 ]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.31.0",
+]
