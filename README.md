@@ -1,40 +1,60 @@
-# AX_study
-AI Agent 부트캠프 학습 내용을 기록하는 저장소입니다.
+# AX Study
 
+AI Agent 엔지니어 부트캠프에서 학습한 내용을 기록하는 저장소입니다.
 
-------------------------------
+Python 기초부터 AI Agent 개발까지 학습 과정을 단계별로 기록하고,
+강의 내용과 실습 결과를 함께 정리하고 있습니다.
 
-## 📅 학습 기간
+---
 
-- 시작일 : 2026.08.06
-- 업데이트 주기 : everyday
+## 학습 목표
 
-------------------------------
+- Python 프로그래밍 기초 익히기
+- 문제를 코드로 해결하는 사고방식 기르기
+- SQL, FastAPI, AI·LLM 기술로 학습 범위 확장하기
+- 최종적으로 AI Agent 서비스를 직접 설계하고 구현하기
 
-## 📚 폴더 구성
-chapter별 강의 메모(lesson) 실습(practice) 폴더 하위에 각 강의 세션이 정리되어 있습니다.
-강의 세션은 .ipynb 파일로 구성되어 있습니다.
+---
 
-[chapter01] Git & GitHub
-  - lesson : 강의 메모
-    - 01.ipynb
-    - 02.ipynb
-    - 03.ipynb
-  - practice : 실습 예제와 제출물
-    - 01.ipynb
-    - 02.ipynb
-    - 03.ipynb
+## 학습 기간
 
-[chapter02] Python
-  - lesson : 강의 메모
-    - 01.ipynb
-    - 02.ipynb
-    - 03.ipynb
-    - 04.ipynb
-  - practice : 실습 예제와 제출물
-    - 01.ipynb
-    - 02.ipynb
-    - 03.ipynb
-    - 04.ipynb
+- 시작일: 2026.08.06
+- 업데이트: 부트캠프 학습 진도에 따라 수시 업데이트
+- 현재 학습 단계: Python 기초 
+- 최종 업데이트 일자 : 2026.08.12
+---
 
+## 학습 내용
 
+| 구분 | 학습 주제 | 주요 내용 | 상태 |
+|---|---|---|---|
+| 01 | 개발환경 설정 | uv, 가상환경, VS Code, Jupyter Notebook | 완료 |
+| 02 | 변수·연산자·자료형 | 변수, 동적 타이핑, 형변환, 연산자, 문자열 | 완료 |
+| 03 | 기본 자료구조 | 리스트, 튜플, 딕셔너리, 집합 | 완료 |
+| 04 | 제어문 | 조건문, 반복문, 종합 제어문 실습 | 완료 |
+| 05 | 함수 | 함수 정의, 매개변수, 변수 스코프, 람다 함수 | 학습 중 |
+
+---
+
+## 폴더 구조
+
+```text
+AX_study/
+├── 02_PYTHON/
+│   ├── chapter01 Setting/
+│   │   ├── lesson/
+│   │   └── practice/
+│   ├── chapter02 변수 연산자 자료형/
+│   │   ├── lesson/
+│   │   └── practice/
+│   ├── chapter03 기본 자료 구조/
+│   │   ├── lesson/
+│   │   └── practice/
+│   ├── chapter04 제어문/
+│   │   ├── lesson/
+│   │   └── practice/
+│   └── chapter05 함수/
+│       ├── lesson/
+│       └── practice/
+├── pyproject.toml
+└── README.md
