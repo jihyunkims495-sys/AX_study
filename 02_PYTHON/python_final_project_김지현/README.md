@@ -98,3 +98,47 @@ VS Code를 사용할 경우 `uv sync`로 생성된 `.venv`의 Python 인터프�
 - [ ] `uv sync` 실행 후 `.venv` 생성 확인
 - [ ] VS Code에서 해당 `.venv` Python 인터프리터 선택 후 `main.py` 실행 확인
 - [ ] 완성된 `python_final_project_김지현/` 폴더 전체를 `python_final_project_김지현.zip`으로 압축하여 LMS 제출
+
+## 메뉴별 동작 화면
+
+### 메인 메뉴
+
+프로그램을 실행하면 도서 관리 기능을 선택할 수 있는 메인 메뉴가 표시됩니다.
+
+![도서 관리 시스템 메인 메뉴](./screenshots/main-menu.png)
+
+### 1. 도서 등록
+
+도서 종류를 선택하고 도서명, 저자, ISBN과 도서별 상세 정보를 입력하여 새로운 도서를 등록합니다. 숫자가 아닌 메뉴 값을 입력했을 때의 예외 처리도 확인할 수 있습니다.
+
+![도서 등록 동작 화면](./screenshots/menu-1-register.png)
+
+### 2. 전체 도서 조회
+
+등록된 도서의 종류, 도서명, 저자, ISBN, 상세 정보와 대여 상태를 확인합니다.
+
+![전체 도서 조회 동작 화면](./screenshots/menu-2-list.png)
+
+### 3. 도서 검색
+
+도서명, 저자 또는 ISBN을 검색어로 입력하여 일치하는 도서를 조회합니다.
+
+![도서 검색 동작 화면](./screenshots/menu-3-search.png)
+
+### 4. 대여 및 반납 처리
+
+ISBN으로 도서를 선택한 뒤 대여 또는 반납 처리를 수행합니다. 아래 화면에서는 도서를 대여한 후 다시 반납하는 과정을 확인할 수 있습니다.
+
+![도서 대여 및 반납 동작 화면](./screenshots/menu-4-borrow-return.png)
+
+### 5. 프로그램 종료
+
+종료 메뉴를 선택하면 안내 메시지를 출력하고 도서 관리 시스템을 종료합니다.
+
+![프로그램 종료 동작 화면](./screenshots/menu-5-exit.png)
+
+### 6. 통계 조회(심화)
+
+현재 월의 대여 건수와 가장 많이 대여된 도서를 확인합니다.
+
+![통계 조회 동작 화면](./screenshots/menu-6-statistics.png)
