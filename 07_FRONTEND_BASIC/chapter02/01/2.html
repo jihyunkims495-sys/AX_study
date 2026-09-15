@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style> 
+        li{
+            /*background: grey;*/
+            background: orange;
+        }
+
+        .kia{                       /* 클래스 선택자*/
+            background: blue !important;
+        }
+
+        .discontinued{              /* 클래스 선택자 클래스를 여러개 설정 할 수 있음*/
+            background : yellow;
+            font-style: italic;
+        }
+
+        #sorento{
+            background: red;      /*아이디 선택자*/
+        }
+
+        .kia2{
+            background: skyblue;
+        }
+    </style>
+    <ul>
+        <li class="kia" id="sorento" style="background: pink;">소렌토</li>          <!--스타일 속성 직접 입력한다-->
+        <li>팰리세이드</li>
+        <li class="discontinued">모하비</li>
+        <li class="kia2 discontinued">트레일블레이저</li>
+        <li>카이엔</li>
+    </ul>
+</body>
+</html>
