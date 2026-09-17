@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+:root {
+    --primary-font-family: "Noto Sans KR", sans-serif;
+    --primary-font-size: 13px;
+    --primary-font-color: #000;
+    --accent-color: #8769f0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--primary-font-family);
+}
+
+html {
+    font-size: var(--primary-font-size);
+    color-scheme: light;
+}
+
+/* 초기화 */
+body {
+    margin: 0;
+    background: #fff;
+    color: var(--primary-font-color);
+}
+
+ul, ol, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 상단 공통 영역 S */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 66px;
+    padding: 0 15px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+header > div {
+    width: 20%;
+}
+
+header > div.left {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+header > div.right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+}
+
+header .left img,
+header .right img {
+    height: 20px;
+}
+
+header .logo img {
+    height: 34px;
+}
+
+header .right .cart {
+    position: relative;
+}
+
+header .right .cart .badge {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    min-width: 15px;
+    height: 15px;
+    padding: 0 3px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    color: #fff;
+    font-size: 9px;
+    line-height: 15px;
+    text-align: center;
+}
+/* 상단 공통 영역 E */
+
+/* 상품후기 목록 페이지 S */
+.wrap {
+    max-width: 500px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+.page-title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.page-title .back {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 18px;
+}
+
+.page-title h1 {
+    margin: 0;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.rating-summary {
+    display: flex;
+    padding: 25px 20px;
+}
+
+.rating-summary .score-box,
+.rating-summary .satisfaction {
+    flex: 1;
+}
+
+.rating-summary .score-box {
+    border-right: 1px solid #e6e6e6;
+}
+
+.rating-summary h2 {
+    margin: 0 0 12px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.rating-summary .score {
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.rating-summary .score span {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #999;
+}
+
+.rating-summary .stars {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+
+.rating-summary .stars img {
+    height: 18px;
+}
+
+.bar-chart {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 12px;
+    height: 90px;
+    border-bottom: 2px solid #222;
+    padding: 0 10px;
+}
+
+.bar-chart .bar-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.bar-chart .percent {
+    font-size: 0.9rem;
+    color: #999;
+    margin-bottom: 6px;
+}
+
+.bar-chart .bar {
+    width: 6px;
+    background: #eee;
+    border-radius: 4px;
+}
+
+.bar-chart .bar.filled {
+    background: var(--accent-color);
+}
+
+.bar-chart .label {
+    margin-top: 8px;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.write-review-btn {
+    display: block;
+    margin: 0 20px 15px;
+    padding: 15px 0;
+    border: 1px solid #222;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #222;
+    background: #fff;
+}
+
+.search-box {
+    position: relative;
+    margin: 0 20px 25px;
+}
+
+.search-box input {
+    width: 100%;
+    height: 46px;
+    padding: 0 45px 0 15px;
+    border: none;
+    background: #f5f5f5;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.search-box input::placeholder {
+    color: #b1b1b1;
+}
+
+.search-box img {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 18px;
+}
+
+.section-divider {
+    height: 8px;
+    background: #f5f5f5;
+}
+
+.photo-review {
+    padding: 20px;
+}
+
+.photo-review .section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.photo-review .section-head h3 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.photo-review .section-head img {
+    height: 16px;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+}
+
+.photo-grid img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px 0;
+}
+
+.pagination button {
+    width: 34px;
+    height: 34px;
+    border: 1px solid #e6e6e6;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.pagination button img {
+    height: 12px;
+}
+
+.pagination .page-num {
+    font-size: 1rem;
+    color: #999;
+}
+
+.pagination .page-num strong {
+    color: #222;
+    font-weight: 700;
+}
+
+.review-count {
+    padding: 20px 20px 5px;
+    font-size: 1.25rem;
+}
+
+.review-count strong {
+    font-weight: 700;
+}
+
+.review-list {
+    padding: 0 20px;
+}
+
+.review-item {
+    padding: 22px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.review-item .item-head {
+    display: flex;
+    gap: 12px;
+}
+
+.review-item .thumb {
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.review-item .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.review-item .product-name {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 6px;
+}
+
+.review-item .stars-row img {
+    height: 13px;
+    margin-right: 1px;
+}
+
+.review-item .meta {
+    margin-top: 6px;
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.review-item .content {
+    margin-top: 14px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #222;
+    white-space: pre-line;
+}
+
+.review-item .review-photo {
+    display: block;
+    width: 130px;
+    margin-top: 14px;
+    border-radius: 6px;
+}
+
+.review-item .reply {
+    display: flex;
+    gap: 10px;
+    margin-top: 16px;
+    padding: 16px;
+    background: #f7f7f8;
+    border-radius: 6px;
+}
+
+.review-item .reply .reply-label {
+    flex-shrink: 0;
+    color: var(--accent-color);
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.review-item .reply .reply-body p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #333;
+    white-space: pre-line;
+}
+
+.review-item .reply .reply-meta {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: #aaa;
+}
+
+footer.site-footer {
+    padding: 35px 20px;
+    text-align: center;
+    background: #fafafa;
+}
+
+footer.site-footer .footer-logo {
+    height: 24px;
+    opacity: 0.5;
+    margin-bottom: 18px;
+}
+
+footer.site-footer .phone {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 24px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+footer.site-footer .phone img {
+    height: 14px;
+}
+
+footer.site-footer .bank-info {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+footer.site-footer .bank-info strong {
+    color: #333;
+}
+
+footer.site-footer .biz-info {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 18px;
+}
+
+footer.site-footer .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+footer.site-footer .footer-links span {
+    padding-left: 14px;
+    border-left: 1px solid #ddd;
+}
+
+footer.site-footer .footer-links span:first-child {
+    padding-left: 0;
+    border-left: none;
+}
+
+.bottom-nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    background: #fff;
+    border-top: 1px solid #e6e6e6;
+}
+
+.bottom-nav a {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 0 12px;
+    color: #666;
+    font-size: 0.85rem;
+}
+
+.bottom-nav a img {
+    height: 20px;
+}
+
+.floating-buttons {
+    position: fixed;
+    right: 20px;
+    bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.floating-buttons button {
+    width: 46px;
+    height: 46px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.floating-buttons button img {
+    height: 16px;
+}
+
+.floating-buttons .top-btn {
+    background: #333;
+}
+
+.floating-buttons .top-btn span {
+    color: #fff;
+    font-size: 0.6rem;
+    margin-top: 2px;
+}
+
+.floating-buttons .webhard-btn {
+    background: var(--accent-color);
+}
+
+.floating-buttons .webhard-btn span {
+    color: #fff;
+    font-size: 0.55rem;
+    margin-top: 2px;
+}
+
+.floating-buttons .kakao-btn {
+    background: #fee500;
+}
+/* 상품후기 목록 페이지 E */

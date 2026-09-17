@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            margin: 0;    /*여백 제거*/
+        }
+        ul{
+            margin: 0;     /*여백 제거*/
+            padding: 0;     /*여백 제거*/
+            list-style: none;       /*여백 제거*/
+            width: 100%;            /*%를 줘서 규모를 설정할 수도 있음, px도 %도 가능! */
+            height: 100px;
+        }
+
+
+        ul li{                  /*ul이 부모요소 //li가 자식요소*/
+            min-width: 100px;
+        }
+
+
+
+        li:nth-of-type(1){
+            background: red;
+        }
+        li:nth-of-type(2){
+            background: blue;
+        }
+         li:nth-of-type(3){
+            background: green;
+        }
+
+        .flex1{
+            display: flex;
+        }
+
+        .flex2{
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .flex3{
+            display: flex;
+            justify-content: center;
+        }
+
+        .flex4{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .flex5{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .flex6{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .flex7{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-start;
+        }
+
+        .flex8{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-end;
+        }
+
+        .flex9{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+    </style>
+
+    <h3>flex-start</h3>
+    <ul class="flex1">
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ul>
+
+    <h3>flex-end</h3>
+    <ul class="flex2">
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ul>
+
+    <h3>center</h3>
+    <ul class="flex3">
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ul>
+
+    <h3>space-between</h3>
+    <ul class="flex4">
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ul>
+
+    <h3>space-around</h3>
+    <ul class="flex5">
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ul>
+
+    <h3>space-evenly</h3>
+    <ul class="flex6">
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ul>
+
+    <h3>align-items : flex-start</h3>
+    <ul class="flex7">
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ul>
+
+    <h3>align-items : flex-end</h3>
+    <ul class="flex8">
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ul>
+
+    <h3>align-items : center</h3>
+    <ul class="flex9">
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ul>
+</body>
+</html>

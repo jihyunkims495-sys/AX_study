@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>자식속성에 정의하는 flex-grow</h1>
+    <h2>남아있는 공백을 차지할 비율을 설정(지정한 숫자만큼 공백의 비율이 조정됨)</h2>
+    <h2>만약, 내용이 늘어난다면 늘어난 내용에 따라 (width)가 늘어나 있고, 여기에 남아있는 여백을 분할 하기 때문에 공통 비율이 달라진다.width: 0;으로 설정하면, 여백을 균등하게 분할 할 수 있다.</h2>
+    
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            border: 1px solid #000;
+            height: 100px;
+        }
+
+
+        li{
+            /*min-width: 100px;*/
+            width: 0;
+        }
+
+
+
+        li:nth-of-type(1){
+            background: red;
+            flex-grow: 1;
+        }
+        li:nth-of-type(2){
+            background: blue;
+            flex-grow: 1;
+        }
+        li:nth-of-type(3){
+            background: green;
+            flex-grow: 1;
+        }
+
+
+        .flex1{
+            display: flex;
+        }
+
+    </style>
+
+
+
+    <h3>align-items:stretch (기본값)</h3>
+    <ul class="flex1">
+        <li>메뉴1</li>
+        <li>메뉴2메뉴2메뉴2메뉴2메뉴2메뉴2메뉴2메뉴2메뉴2메뉴2메뉴2메뉴2메뉴2메뉴2메뉴2메뉴2메뉴2메뉴2메뉴2메뉴2</li>
+        <li>메뉴3</li>
+    </ul>
+
+</body>
+</html>
