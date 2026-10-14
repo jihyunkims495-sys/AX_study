@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .box {
+            padding:150px;
+            background : grey ;
+        }
+        .box2 {
+            background : orange ;
+        }
+        .box3 {
+            background : black ;
+        }
+    </style>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            const box1 = document.querySelector('.box1');
+            const box2 = document.querySelector('.box2');
+            const box3 = document.querySelector('.box3');
+
+            box1.addEventListener('click', function(e) {
+                console.log('box1 클릭');
+            });
+            box2.addEventListener('click', function(e) {
+                console.log('box2 클릭');
+            },false);//true를 넣으면 캡처링 단계에서 이벤트가 발생한다.
+            box3.addEventListener('click', function(e) {
+                console.log('box3 클릭');
+                console.log(e);
+                //e.stopPropagation(); //이벤트 버블링을 막는다.
+                e.stopImmediatePropagation(); //이벤트 버블링을 막는다. 같은 이벤트가 발생했을 때 다른 이벤트를 막는다.
+            });
+            box1.addEventListener('click', function(e) {
+                console.log('box1 클릭2');
+            });
+            box2.addEventListener('click', function(e) {
+                console.log('box2 클릭2');
+            },false);//true를 넣으면 캡처링 단계에서 이벤트가 발생한다.
+            box3.addEventListener('click', function(e) {
+                console.log('box3 클릭2');
+            });
+        });
+    </script>
+    
+    <div class="box box1">
+        <div class="box box2">
+            <div class="box box3"></div>
+        </div>
+    </div>
+    <button type="button" id="btn">클릭</button>
+</body>
+</html>

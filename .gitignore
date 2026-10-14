@@ -1,3 +1,21 @@
 .venv/
 .env
 05.SQL/dbeaver/
+
+# Local credentials and environment overrides
+.env.*
+!.env.example
+
+# Dependency and framework build output
+node_modules/
+.next/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+# Python and OS-generated files
+__pycache__/
+*.py[cod]
+.DS_Store
+__MACOSX/
